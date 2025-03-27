@@ -33,19 +33,6 @@ mvn dependency:resolve
 mvn spring-boot:run
 ```
 
-### 3. AWS S3 Key Setup
-This project requires AWS credentials to access S3. Contact the project maintainer to obtain the necessary keys.
-
-After obtaining the keys, set them up in your `.env` file:
-```
-AWS_ACCESS_KEY=your-access-key
-AWS_SECRET_KEY=your-secret-key
-```
-Then, export them in your environment:
-```sh
-export $(cat .env | xargs)
-```
-
 ## Security Notice
 To ensure security and prevent accidental exposure of sensitive credentials:
 - The `application.properties` file has been removed from the repository.
